@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.clearfix:after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 0;
+				clear: both;
+			}
+			
+			.banner {
+				width: 500px;
+				height: 300px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.banner .swiper-pagination {
+				bottom: 20px;
+			}
+			
+			.xbanner {
+				height: 26px;
+				line-height: 26px;
+				overflow: hidden;
+			}
+			
+			.xbanner .swiper-container {
+				height: 26px;
+			}
+			
+			.xxbanner {
+				height: 52px;
+				overflow: hidden;
+				line-height: 26px;
+			}
+			
+			.xxbanner .swiper-container {
+				height: 52px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="clearfix">
+			<div class="fl">
+				<h1>水平轮播图普通</h1>
+				<div class="banner">
+					<div class="swiper-container swiper-horizontal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination">
+
+					</div>
+					<div class="swiper-button-prev">
+
+					</div>
+					<div class="swiper-button-next">
+
+					</div>
+				</div>
+			</div>
+			<div class="fr">
+				<h1>垂直轮播图普通</h1>
+				<div class="banner">
+					<div class="swiper-container swiper-vertical">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="fl">
+				<!--垂直滚动-->
+				<h1>垂直文字滚动</h1>
+				<div class="xbanner">
+					<div class="swiper-container swiper-vertical">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								slide1
+							</div>
+							<div class="swiper-slide">
+								slide2
+							</div>
+							<div class="swiper-slide">
+								slide3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fr">
+				<h1>多行文字垂直文字滚动</h1>
+				<div class="xxbanner">
+					<div class="swiper-container swiper-vertical-second">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								slide1
+							</div>
+							<div class="swiper-slide">
+								slide2
+							</div>
+							<div class="swiper-slide">
+								slide3
+							</div>
+							<div class="swiper-slide">
+								slide4
+							</div>
+							<div class="swiper-slide">
+								slide5
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+			.swiper1 img {
+				width: 500px;
+				height: 250px;
+			}
+			
+			.swiper2 img {
+				width: 250px;
+			}
+			
+			.swiper2 .swiper-slide-active {
+				border: 1px solid red;
+			}
+		</style>
+		<div class="clearfix">
+			<div class="fl">
+				<h1>双向绑定</h1>
+				<div class="banner">
+					<div class="swiper-container swiper1 swiperbind">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+						<div class="swiper-pagination">
+
+						</div>
+					</div>
+
+				</div>
+				<div class="banner">
+					<div class="swiper-container swiper2 swiperbind">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+						<div class="swiper-button-next">
+
+						</div>
+						<div class="swiper-button-prev">
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="fr">
+				<h1>简单的双向绑定</h1>
+				<div class="banner">
+					<div class="swiper-container swiper3 swiperbind">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+						<div class="swiper-pagination">
+
+						</div>
+					</div>
+
+				</div>
+				<div class="banner">
+					<div class="swiper-container swiper4 swiperbind">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="../img/01.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/02.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="../img/03.jpg" />
+							</div>
+						</div>
+						<div class="swiper-button-next">
+
+						</div>
+						<div class="swiper-button-prev">
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/*左1 水平轮播*/
+		var swiper = new Swiper('.swiper-horizontal', {
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true,
+			pagination: { //分页器
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: { //前后箭头
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+		/*右1 垂直轮播  左2垂直轮播*/
+		var swiper = new Swiper('.swiper-vertical', {
+			direction: 'vertical',
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true,
+			pagination: { //分页器
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: { //前后箭头
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+		/*右2 多行文字垂直轮播*/
+		var swiper = new Swiper('.swiper-vertical-second', {
+			direction: 'vertical',
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true,
+			slidesPerView: 2
+		});
+		/*左3多行文字滚动轮播*/
+		var swiper = new Swiper('.swiper-vertical-third', {
+			direction: 'vertical',
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true
+		});
+
+		/*双向数据绑定*/
+		var swiper1 = new Swiper('.swiper1', {
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true,
+			pagination: { //分页器
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			loopedSlides: 3
+		});
+		var swiper2 = new Swiper('.swiper2', {
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			loop: true,
+			slidesPerView: 2,
+			slideToClickedSlide: true,
+			loopedSlides: 3,
+			navigation: { //前后箭头
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+		swiper1.controller.control = swiper2; //需要在Swiper2初始化后，Swiper1控制Swiper2   注意这里的变化和3.0的
+		swiper2.controller.control = swiper1;
+		/*简单的双向数据绑定*/
+		var Swiper1 = new Swiper('.swiper3',{
+			loop:true,
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			pagination: { //分页器
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+			
+		});
+		var Swiper2 = new Swiper('.swiper4', {
+			loop:true,
+			autoplay: {
+				disableOnInteraction: false //触碰后自动切换也不会停止
+			},
+			navigation: { //前后箭头
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+			
+		})
+		Swiper1.controller.control = Swiper2; //Swiper1控制Swiper2，需要在Swiper2初始化后
+		Swiper2.controller.control = Swiper1; //Swiper2控制Swiper1，需要在Swiper1初始化后
+	</script>
+
+</html>

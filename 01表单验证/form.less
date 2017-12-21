@@ -1,0 +1,161 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ .fl{
+     float: left;
+ }
+ .fr{
+     float: right;
+ }
+ .clearfix:after{
+     content: '';
+     display: block;
+     width: 0;
+     height: 0;
+     clear: both;
+     zoom: 1;
+ }
+ .content {
+     width: 750px;
+     height: 600px;
+     margin: 0 auto;
+     border: 1px solid #ccc;
+     background: #fff;
+     padding-left: 35px;
+     padding-top: 25px;
+     .form_select {
+         line-height: 36px;
+         padding-top: 10px;
+         span {
+             width: 70px;
+             text-align: justify;
+             text-align-last: justify;
+             position: relative;
+         }
+         b {
+             position: absolute;
+             left: -10px;
+             top: 0;
+             color: #aa2f23;
+         }
+     }
+     .select {
+         width: 170px;
+         height: 36px;
+         border: 1px solid #dddddd;
+         position: relative;
+         text-indent: 10px;
+         cursor: pointer;
+         margin-left: 15px;
+         .tip {
+             width: 150px;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             white-space: nowrap;
+             padding-right: 20px;
+             position: relative;
+             &:before {
+                 content: '';
+                 display: block;
+                 width: 0;
+                 height: 0;
+                 border-top: 8px solid #999999;
+                 border-left: 8px solid transparent;
+                 border-right: 8px solid transparent;
+                 position: absolute;
+                 top: 14px;
+                 right: 15px;
+             }
+         }
+         .sort_hide {
+             width: 100%;
+             background: #fff;
+             z-index: 888;
+             border: 1px solid #ddd;
+             position: absolute;
+             left: -1px;
+             top: 36px;
+             display: none;
+             p {
+                 line-height: 20px;
+                 font-size: 14px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 width: 100%;
+             }
+         }
+         .sort_show {
+             display: block;
+         }
+     }
+     .firstdiv {
+         margin-left: 15px;
+         p {
+             font-size: 14px;
+             color: #999;
+         }
+         input {
+             width: 385px;
+             height: 40px;
+             line-height: 40px;
+             text-indent: 10px;
+             border: 1px solid #ddd;
+         }
+         input[type=checkbox] {
+             display: none;
+         }
+         label {
+             padding: 5px 10px;
+             background: #b2b2b2;
+             border-radius: 3px;
+             color: #fff;
+         }
+         img {
+             display: block;
+         }
+         .creatcheck {
+             margin-top: 10px;
+         }
+         .creatbtn {
+             display: inline-block;
+             padding: 3px 10px;
+             background: #aa2f23;
+             color: #fff;
+             border-radius: 3px;
+         }
+         .creatinput {
+             width: 150px;
+             height: 40px;
+             line-height: 40px;
+         }
+         .zhu {
+             i {
+                 color: #ff673f;
+                 padding-right: 5px;
+             }
+         }
+         textarea {
+             width: 500px;
+             height: 50px;
+             border: 1px solid #ddd;
+             resize: none;
+             text-indent: 10px;
+             display: block;
+         }
+         .url {
+             width: 500px;
+         }
+     }
+     .submit {
+         width: 160px;
+         height: 46px;
+         line-height: 46px;
+         text-align: center;
+         background: #aa2f23;
+         color: #fff;
+         margin: 20px auto;
+         border-radius: 5px;
+     }
+ }
